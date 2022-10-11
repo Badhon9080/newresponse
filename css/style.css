@@ -1,0 +1,631 @@
+/*
+Theme Name: 
+Author: 
+Version: 1.0.0
+
+
+Table of Content
+===================================================
+
+    1. Common Css
+    2. Nav Section
+    3. Banner Section
+*/
+/* Common Css Start */
+h1,h2,h3,h4,h5,h6,
+p,
+ul,ol,
+span,
+small{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+
+
+
+a,a:hover{
+    text-decoration: none;
+}
+/* //Common Css End */
+
+/* Nav Section Css Start */
+#nav {
+   background-color: #02918c;
+ /*  position: sticky;
+   top: 0; */
+  
+
+}
+#main_menu ul li a{
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.4s linear;
+}
+#main_menu ul li:hover a{
+    color: #cfc91d;
+}
+/* //Nav Section Css End */
+/* Banner Section Css Start */
+#banner{
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 730px;
+    
+    position: relative;
+    z-index: 1;
+}
+#banner::before{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: rgba(27, 45, 30, 0.66);
+    z-index: -1;
+}
+.banner_content h3{
+    font-weight: 800;
+    margin-top: 213px; 
+    color: #fff;
+    font-size: 30px;
+}
+
+.banner_content h1{
+    font-weight: 800;
+    font-size: 68px;
+    text-transform: uppercase;
+    margin-top: 21px;
+    letter-spacing: 30px;
+    color: #fff;
+
+}
+.banner_content p{
+    margin-top: 18px;
+    color: #fff;
+    font-size: 18px;
+}
+.divider_img{
+    margin-top: 50px;
+}
+.click_knowmore{
+    margin-top: 48px;
+}
+.click_knowmore a{
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    padding: 11px 25px;
+    color: #0b1016;
+    transition: all 0.5s linear;
+}
+.click_knowmore:hover a{
+    border-radius: 10px;
+    color: green;
+}
+/* //Banner Section Css End */
+/*About Section Css Start */                    
+.about_content{
+    margin-top: 80px;
+}
+.about_content h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+}
+.about_content p{
+    margin-top: 28px;
+    line-height: 40px;
+    margin-left: 230px;
+    color: #898c91;
+    width: 840px;
+    font-size: 16px;
+}
+.about_content span{
+    font-weight: 800;
+    font-size: 23px;
+
+}
+.title_goes_here{
+    margin-top: 68px;
+}
+.title_goes_here_concept_1{
+    height: 232px;
+    border-right: 1px solid #d9dbdb;
+}
+.title_goes_here_concept_2{
+    height: 232px;
+    border-right: 1px solid #d9dbdb;
+}
+.title_goes_here_concept_3{
+    height: 232px;
+    border-right: 1px solid #d9dbdb;
+}
+.title_goes_here_img{
+    margin-top: 20px;
+}
+.title_goes_here_heading{
+    margin-top: 25px;
+}
+.title_goes_here_heading h4{
+    font-weight: 800;
+    font-size: 16px;
+    color: #7e8287;
+}
+.title_goes_here_paragraph{
+    font-size: 11px;
+    margin-top: 25px;
+    width: 171px;
+    line-height: 20px;
+    color: #7e8287;
+    margin-left: 80px;
+}
+/* //About Section Css End */
+/* P.Service Section Css Start */
+#service {
+    margin-top: 100px;
+    height: 728px;
+    background-image: url(../img/typing.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+#service .service_content {
+    margin-top: 70px;
+}
+#service .service_content h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+}
+#service .service_content p {
+    margin-top: 30px;
+    line-height: 33px;
+    width: 475px;
+    color: #7e8287;
+}
+.service_title_goes_here {
+    margin-top: 64px;
+}
+.service_title_goes_here_part_three {
+    margin-top: 40px;
+}
+.service_title_goes_here_part_four {
+    margin-top: 40px;
+}
+.service_title_goes_here_heading {
+    margin-top: 16px;
+}
+.service_title_goes_here_heading h4 {
+    font-weight: 800;
+    font-size: 16px;
+    color: #7e8287;
+}
+.service_title_goes_here_paragraph {
+    margin-top: 23px;
+    
+}
+.service_title_goes_here_paragraph p {
+    font-size: 11px;
+    line-height: 20px;
+    width: 167px;
+    color: #7e8287;
+}
+/* //P.Service Section Css End */
+/* P.Mywork Section Css Start */
+.mywork_content {
+    margin-top: 100px;
+}
+.mywork_content h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+}
+.mywork_content p{
+    margin-top: 50px;
+    margin: auto;
+    line-height: 33px;
+    width: 660px;
+    color: #7e8287;
+}
+.mywork_title_goes_here {
+    margin-top: 84px;
+}
+.mywork_title_goes_here_img {
+    position: relative;
+}
+.overlay {
+   position: absolute;
+   background-color: rgba(64, 113, 111, 0.82);
+   inset: 28px;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s linear;   
+}
+
+.mywork_title_goes_here_img:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.myfolio_title_goes_here_heading {
+    margin-top: 50px;
+}
+.myfolio_title_goes_here_heading h4 {
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+}
+
+.myfolio_title_goes_here_paragraph {
+    margin-top: 13px;
+}
+
+.myfolio_title_goes_here_paragraph p {
+    font-size: 13px;
+    margin: auto;
+    width: 187px;
+    color: #fff;
+}
+/* //P.Mywork Section Css End */
+/* P.Contact Section Css Start */
+#contact .contact_content {
+    margin-top: 99px;
+}
+#contact .contact_content h2 {
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+}
+#contact .contact_content p {
+    margin-top: 25px;
+    margin-left: 340px;
+    line-height: 33px;
+    width: 643px;
+    color: #7e8287;
+}
+.contact_form_section {
+    margin-top: 74px;
+    height: 700px;
+    background-color: #0b0b0b;
+}
+.name input{
+    font-size: 16px;
+    margin-top: 67px;
+    text-align: center;
+  padding-bottom: 17px; 
+    border: none;
+    border-bottom: 1px solid #898989;
+    background-color: #0b0b0b;
+    width: 640px;
+    color: #797c81;
+
+}
+.name input:focus {
+    box-shadow: none;
+    outline: none;
+}
+.email input {
+    font-size: 16px;
+    margin-top: 67px;
+    text-align: center;
+    padding-bottom: 17px; 
+    border: none;
+    border-bottom: 1px solid #898989;
+    background-color: #0b0b0b;
+    width: 640px;
+    color: #797c81;
+
+}
+.email input:focus {
+    box-shadow: none;
+    outline: none;
+}
+.message textarea  {
+    font-size: 16px;
+    margin-top: 67px;
+    text-align: center;
+    padding-bottom: 7px; 
+    border: none;
+    border-bottom: 1px solid #898989;
+    background-color: #0b0b0b;
+    width: 923px;
+    color: #797c81; 
+
+}
+.message textarea:focus {
+    box-shadow: none;
+    outline: none;
+}
+.button {
+    margin-top: 70px;
+    
+}
+.button button {
+    font-weight: 800;
+    font-size: 14px;
+    background-color: #cfc91d;
+    border: none;
+    padding: 5px 26px;
+}
+/* P.Contact Section Css End */
+/*P.Last Section Css Start */
+#last {
+    height: 71px;
+    background-color: #000;
+}
+#last .last_content p {
+    margin-top: 35px;
+}
+/* //P.Last Section Css End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Service Section Css Start */
+/*
+#service{
+    height: 728px;
+    margin-top: 116px;
+   background-image: url(../img/typing.png);
+   background-position: center;
+  background-size: cover;
+}
+.service_content{
+    margin-top: 50px
+}
+.service_content h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+}
+.service_content p{
+    font-size: 16px;
+    width: 450px;
+    color: #7e8287;
+    margin-top: 30px;
+}
+.service_title_goes_here{
+    margin-top: 59px;
+}
+.service_title_goes_here_half_2{
+    margin-top: 40px;
+}
+.service_title_goes_here_heading{
+    margin-top: 21px;
+}
+.service_title_goes_here_heading h4{
+    font-weight: 800;
+    font-size: 16px;
+    color: #7e8287;
+   
+}
+.service_title_goes_here_paragraph{
+    margin-top: 18px;
+
+}
+.service_title_goes_here_paragraph p{
+    width: 160px;
+    color: #7e8287;
+    font-size: 11px;
+}
+*/
+/* //Service Section Css End */
+/* Mywork Section Css Start */
+/*
+.mywork_content{
+    margin-top: 99px;
+}
+.mywork_content h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+}
+.mywork_content p{
+    height: 32px;
+    line-height: 32px;
+    width: 683px;
+    margin-left: 300px;
+    color: #7e8287;
+} 
+.mywork_title_goes_here{
+    margin-top: 73px;
+}  
+.mywork_title_goes_here_img{
+    position: relative;
+}
+.mywork_title_goes_here_overlay{
+    position: absolute;
+    background-color: rgba(36, 153, 146, 0.66);
+    inset: 28px;
+   opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s linear;
+}
+
+.mywork_title_goes_here_img:hover .mywork_title_goes_here_overlay{
+    opacity: 1;
+    visibility: visible;
+} 
+.mywork_title_goes_here_heading{
+    margin-top: 50px;
+}
+.mywork_title_goes_here_heading h4{
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+}
+.mywork_title_goes_here_paragraph{
+    margin-top: 16px;
+}
+.mywork_title_goes_here_paragraph p{
+    line-height: 25px;
+    margin-left: 65px;
+    width: 190px;
+
+    font-size: 13px;
+    color: #fff;
+
+}
+*/
+/* //Mywork Section Css End */
+
+/* Contact Section Css Start */
+/*
+
+.contact_concept{
+    margin-top: 78px;
+}
+.contact_concept h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+}
+.contact_concept p{
+    margin-top: 22px;
+    line-height: 32px;
+    width: 683px;
+    margin-left: 300px;
+    color: #7e8287;
+} 
+.form_section{
+    height: 590px;
+    margin-top: 30px;
+    background-color: #0b0b0b; 
+}
+.name_form {
+    margin-top: 49px;
+}
+.name_form input{
+    background-color: #0b0b0b;
+    border: none;
+    border-bottom: 1px solid #6d7175;
+    color: #6d7175;
+    width: 700px;
+    text-align: center;
+}
+.email_form{
+    margin-top: 59px;
+}
+.email_form input{
+    background-color: #0b0b0b;
+    border: none;
+    border-bottom: 1px solid #6d7175;
+    color: #6d7175;
+    width: 700px;
+    text-align: center;
+}
+.message_form {
+    margin-top: 50px;
+}
+.message_form textarea{
+    background-color: #0b0b0b;
+    border: none;
+    border-bottom: 1px solid #6d7175;
+    color: #6d7175;
+    width: 930px;
+    text-align: center;
+}
+.button_part{
+    margin-top: 56px;
+}
+.button_part button{
+    font-weight: 800;
+    background-color: #cfc91d;
+    border: none;
+    font-size: 14px;
+    padding: 7px 40px;
+    transition: all 0.4s linear;
+}
+.button_part:hover button{
+   color: green;
+   border-radius: 20%;
+}
+*/
+/* //Contact Section Css End */
+/* Footer Section Css Start */
+/*
+#footer{
+    height: 69px;
+    background-color:  #000000;
+}
+.footer_concept p{
+   color: #7e8287;
+   margin-top: 30px;
+}
+*/
+/*//Footer Section Css End */
